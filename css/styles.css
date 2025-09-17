@@ -1,0 +1,70 @@
+
+
+.item-to-do{
+    display: flex;
+    align-items: center;
+    margin-top: -20px;
+    position: relative;
+}
+
+.item-to-do p{
+    margin-top: 14px;
+}
+
+form.form-register input{
+    border-radius: 5px;
+    width: 450px;
+}
+
+form.form-register{
+    position: relative;
+}
+
+form.form-register button{
+    border-radius: 5px;
+    background: #0d6efd;
+    color: white;
+    transition: 0.5s;
+    position: absolute;
+    right: 0;
+    border: transparent;
+}
+
+form.form-register button:hover{
+    background: white;
+    color: black;
+    border: 1px solid black;
+}
+
+#global-content{
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 0 5px black;
+    background: white;
+}
+
+.item-to-do button{
+    border-radius: 5px;
+    background: red;
+    color: white;
+    border: transparent;
+    position: absolute;
+    right: 0;
+    transition: 0.5s;
+}
+
+.item-to-do button:hover{
+    transform: scale(1.1);
+}
+
+#global-content h1{
+    text-align: center;
+}
+
+#global-content h2{
+    font-size: 20px;
+}
+
