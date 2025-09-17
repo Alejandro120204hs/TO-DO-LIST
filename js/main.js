@@ -22,7 +22,7 @@ function createToDoItem(textoItem){
 
     // CREAMOS EL ULTIMO NODO HIJO, EL BOTON DE ELIMINAR
     const deleteBtn = document.createElement('button');
-    deleteBtn.textoItem = 'eliminar';
+    deleteBtn.textContent = 'eliminar';
 
     // ENSAMBLAMOS DENTRO DEL NODO PADRE SUS NODOS HIJOS, ES DECIR LA ESTRUCTURA DE LA TAREA
     item.appendChild(checkbox);
@@ -34,3 +34,16 @@ function createToDoItem(textoItem){
 
 
 }
+
+// DETECTAMOS EL EVENTO CLICK SOBRE EL BOTON REGISTRA CON UN EVENTO DE ESCUCHA O LISTENER
+// PARA QUE A PARTIR DE ESTE EVENTO SE AGREGUE LA TAREA DENTRO DEL CONTENEDOR CONT-TO-DO-LIST
+addBtn.addEventListener('click', ()=>{
+    const textoItem = input.value.trim();
+    if(textoItem==''){
+        alert('No se puede crear una tarea vacia');
+    }else{
+        const newItem = createToDoItem(textoItem);
+        toDoList.appendChild(newItem);
+        input.value='';
+    }
+});
