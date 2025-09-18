@@ -7,10 +7,30 @@ body{
     align-items: center;
     margin-top: -20px;
     position: relative;
+    border: transparent;
+    border-radius: 10px;
+    height: 40px;
+    top: 22px;
+    margin-bottom: 40px;
+    padding: 10px;
+    box-shadow: 0 0 5px black;
+}
+
+#cont-to-do-list p{
+    word-break: break-word;
+    
+}
+
+#cont-completed-list p{
+    word-break: break-word;
 }
 
 .item-to-do p{
     margin-top: 14px;
+    margin-left: 5px;
+    word-break: break-word;
+    padding-right: 100px;
+    color: white;
 }
 
 .formulario{
@@ -22,10 +42,15 @@ form.form-register input{
     width: 450px;
     border: transparent;
     background: black;
+    height: 30px;
+    padding: 10px;
     color: white;
-    
 }
 
+form.form-register input:focus{
+    outline: none;
+    border: 1px solid white;
+}
 
 form.form-register input::placeholder{
     color: white;
@@ -37,12 +62,13 @@ form.form-register{
 
 form.form-register button{
     border-radius: 5px;
-    background: black;
+    background: #025df4;
     color: white;
     transition: 0.5s;
     position: absolute;
-    right: 0;
+    right: 8px;
     border: transparent;
+    height: 30px;
 }
 
 form.form-register button:hover{
@@ -57,9 +83,10 @@ form.form-register button:hover{
     margin: 0 auto;
     border-radius: 10px;
     margin-top: 20px;
-    box-shadow: 0 0 20px white;
-    background: white;
+    box-shadow: 0 0 30px white;
+    background: #1a1a1a;
     margin-top: 100px;
+    margin-bottom: 150px;
     border: 1px solid white;
 }
 
@@ -69,7 +96,7 @@ form.form-register button:hover{
     color: white;
     border: transparent;
     position: absolute;
-    right: 0;
+    right: 10px;
     transition: 0.5s;
 }
 
@@ -79,10 +106,13 @@ form.form-register button:hover{
 
 #global-content h1{
     text-align: center;
+    font-size: 30px;
+    color:#039cfa;
 }
 
 #global-content h2{
     font-size: 20px;
+    color: white;
 }
 
 #cont-completed-list .item-to-do p{
@@ -94,7 +124,7 @@ form.form-register button:hover{
     bottom: 10px;
     right: 10px;
     padding: 10px;
-    background:white;
+    background: white;
     color: black;
     cursor: pointer;
     border-radius: 10px;
@@ -105,4 +135,8 @@ form.form-register button:hover{
 
 #changeStyles:hover{
     transform: scale(1.1);
+}
+
+hr{
+    border: 1px solid white;
 }

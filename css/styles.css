@@ -1,5 +1,5 @@
 body{
-    background: #039cfa;
+    background: linear-gradient(135deg, #039cfa, #004aad);
 }
 
 .item-to-do{
@@ -7,10 +7,28 @@ body{
     align-items: center;
     margin-top: -20px;
     position: relative;
+    border: transparent;
+    border-radius: 10px;
+    height: 40px;
+    top: 22px;
+    margin-bottom: 40px;
+    padding: 10px;
+    box-shadow: 0 0 5px black;
 }
 
 .item-to-do p{
     margin-top: 14px;
+    margin-left: 5px;
+    padding-right: 100px;
+}
+
+#cont-to-do-list p{
+    word-break: break-word;
+    
+}
+
+#cont-completed-list p{
+    word-break: break-word;
 }
 
 .formulario{
@@ -22,7 +40,14 @@ form.form-register input{
     width: 450px;
     border: transparent;
     background: #dcdcdc;
-    
+    height: 30px;
+    padding: 10px;
+  
+}
+
+form.form-register input:focus{
+    outline: none;
+    border: 2px solid #039cfa;
 }
 
 form.form-register{
@@ -35,8 +60,9 @@ form.form-register button{
     color: white;
     transition: 0.5s;
     position: absolute;
-    right: 0;
+    right: 8px;
     border: transparent;
+    height: 30px;
 }
 
 form.form-register button:hover{
@@ -54,6 +80,7 @@ form.form-register button:hover{
     box-shadow: 0 0 20px black;
     background: white;
     margin-top: 100px;
+    margin-bottom: 150px;
 }
 
 .item-to-do button{
@@ -62,7 +89,7 @@ form.form-register button:hover{
     color: white;
     border: transparent;
     position: absolute;
-    right: 0;
+    right: 10px;
     transition: 0.5s;
 }
 
@@ -72,6 +99,8 @@ form.form-register button:hover{
 
 #global-content h1{
     text-align: center;
+    font-size: 30px;
+    color:#004aad;
 }
 
 #global-content h2{

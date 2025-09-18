@@ -50,6 +50,21 @@ addBtn.addEventListener('click', ()=>{
 
 });
 
+// AQUI AGREGAS EL NUEVO BLOQUE PARA DETECTAR ENTER
+input.addEventListener('keydown', (event) => {
+    if(event.key === 'Enter'){   // Si la tecla es Enter
+        const textoItem = input.value.trim();
+        if(textoItem === ''){
+            alert('No se puede crear una tarea vacía');
+        } else {
+            const newItem = createToDoItem(textoItem);
+            toDoList.appendChild(newItem);
+            input.value = '';
+            eventsToItem(newItem);
+        }
+    }
+});
+
 // LA SIGUINETE FUNCION NOS PERMITIRA AGREGAR EL FUNCIONAMIENTO PRINCIPAL SOBRE LAS TAREAS ES DECIR MARCA LA TAREA COMO REALIZADA O COMPLETADAO O EN DADO CASO ELIMINARLA
 function eventsToItem(item){
     // UTILIZAMOS QUERYSELECTOR PARA CAPTURAR EL INNPUT Y EL BUTTON QUE ESTAN DENTRO DEL ITEM
