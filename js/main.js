@@ -70,3 +70,15 @@ function eventsToItem(item){
         item.remove();
     });
 };
+
+const btnEstyles = document.getElementById('changeStyles');
+btnEstyles.addEventListener('click',()=>{
+    const linkCss = document.getElementById('enlace-estilos');
+    if(linkCss.getAttribute('href')==='css/styles.css'){
+        linkCss.setAttribute('href', 'css/styles-noche.css');
+        btnEstyles.textContent='Modo dia'
+    }else{
+        linkCss.setAttribute('href', 'css/styles.css');
+        btnEstyles.textContent='Modo Noche'
+    }
+});

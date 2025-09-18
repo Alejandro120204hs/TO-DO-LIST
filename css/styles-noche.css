@@ -1,5 +1,5 @@
 body{
-    background: #039cfa;
+    background: black;
 }
 
 .item-to-do{
@@ -21,8 +21,14 @@ form.form-register input{
     border-radius: 5px;
     width: 450px;
     border: transparent;
-    background: #dcdcdc;
+    background: black;
+    color: white;
     
+}
+
+
+form.form-register input::placeholder{
+    color: white;
 }
 
 form.form-register{
@@ -31,7 +37,7 @@ form.form-register{
 
 form.form-register button{
     border-radius: 5px;
-    background: #025df4;
+    background: black;
     color: white;
     transition: 0.5s;
     position: absolute;
@@ -51,9 +57,10 @@ form.form-register button:hover{
     margin: 0 auto;
     border-radius: 10px;
     margin-top: 20px;
-    box-shadow: 0 0 20px black;
+    box-shadow: 0 0 20px white;
     background: white;
     margin-top: 100px;
+    border: 1px solid white;
 }
 
 .item-to-do button{
@@ -87,11 +94,11 @@ form.form-register button:hover{
     bottom: 10px;
     right: 10px;
     padding: 10px;
-    background: black;
-    color: white;
+    background:white;
+    color: black;
     cursor: pointer;
     border-radius: 10px;
-    box-shadow: 0 0 15px black;
+    box-shadow: 0 0 15px white;
     border: transparent;
     transition: 0.5s;
 }
@@ -99,4 +106,3 @@ form.form-register button:hover{
 #changeStyles:hover{
     transform: scale(1.1);
 }
-
