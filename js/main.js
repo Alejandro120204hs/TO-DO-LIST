@@ -6,6 +6,8 @@ const completeList = document.getElementById('cont-completed-list');
 
 // CREAMOS LA FUNCION QUE NOS PERMITE CREAR UNA NUEVA TAREA A PARTIR DEL FORMULARIO
 // TODA ETIQUETA QUE VAMOS A CREAR ES A PARITR DE LA MAQUETA HTML PRE-EXISTENTE
+
+// ESTA FUNCION SOLO CREA LA ESTRUCTURA DEL HTML Y AUN NO LA INSERTA EN LA PAGINA, LA DEJA EN UN LIMBO
 function createToDoItem(textoItem){
     // CREAMOS EL NODO O ELEMENTO PADRE O CONTENEDOR
     const item = document.createElement('div');
@@ -31,9 +33,7 @@ function createToDoItem(textoItem){
 
     // UTILIZAMOS EL RETURN PARA RETORNAR O DAR RESPUESTA DEL ELEMENTO CREADO YA QUE LO USAREMOS EN OTRA FUNCION MAS ADELANTE
     return item;
-
-
-}
+};
 
 // DETECTAMOS EL EVENTO CLICK SOBRE EL BOTON REGISTRA CON UN EVENTO DE ESCUCHA O LISTENER
 // PARA QUE A PARTIR DE ESTE EVENTO SE AGREGUE LA TAREA DENTRO DEL CONTENEDOR CONT-TO-DO-LIST
@@ -45,11 +45,28 @@ addBtn.addEventListener('click', ()=>{
         const newItem = createToDoItem(textoItem);
         toDoList.appendChild(newItem);
         input.value='';
+        eventsToItem(newItem);
     }
 
 });
 
 // LA SIGUINETE FUNCION NOS PERMITIRA AGREGAR EL FUNCIONAMIENTO PRINCIPAL SOBRE LAS TAREAS ES DECIR MARCA LA TAREA COMO REALIZADA O COMPLETADAO O EN DADO CASO ELIMINARLA
-function eventsToItem(){
+function eventsToItem(item){
+    // UTILIZAMOS QUERYSELECTOR PARA CAPTURAR EL INNPUT Y EL BUTTON QUE ESTAN DENTRO DEL ITEM
+    const checkbox = item.querySelector('input');
+    const deleteBtn = item.querySelector('button');
 
-}
+    // COMPLETAR LA TAREA O MARCARLA COMO COMPLETADA
+    checkbox.addEventListener('change',()=>{
+        if(checkbox.checked){
+            completeList.appendChild(item);
+        }else{
+            toDoList.appendChild(item);
+        }
+    });
+
+    //ELIMINAR UNA TAREA
+    deleteBtn.addEventListener('click',()=>{
+        item.remove();
+    });
+};
