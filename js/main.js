@@ -46,4 +46,10 @@ addBtn.addEventListener('click', ()=>{
         toDoList.appendChild(newItem);
         input.value='';
     }
+
 });
+
+// LA SIGUINETE FUNCION NOS PERMITIRA AGREGAR EL FUNCIONAMIENTO PRINCIPAL SOBRE LAS TAREAS ES DECIR MARCA LA TAREA COMO REALIZADA O COMPLETADAO O EN DADO CASO ELIMINARLA
+function eventsToItem(){
+
+}

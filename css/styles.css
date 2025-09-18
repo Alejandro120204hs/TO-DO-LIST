@@ -1,4 +1,6 @@
-
+body{
+    background: #039cfa;
+}
 
 .item-to-do{
     display: flex;
@@ -11,9 +13,16 @@
     margin-top: 14px;
 }
 
+.formulario{
+    padding: 20px;
+}
+
 form.form-register input{
     border-radius: 5px;
     width: 450px;
+    border: transparent;
+    background: #dcdcdc;
+    
 }
 
 form.form-register{
@@ -22,7 +31,7 @@ form.form-register{
 
 form.form-register button{
     border-radius: 5px;
-    background: #0d6efd;
+    background: #025df4;
     color: white;
     transition: 0.5s;
     position: absolute;
@@ -42,8 +51,9 @@ form.form-register button:hover{
     margin: 0 auto;
     border-radius: 10px;
     margin-top: 20px;
-    box-shadow: 0 0 5px black;
+    box-shadow: 0 0 20px black;
     background: white;
+    margin-top: 100px;
 }
 
 .item-to-do button{
