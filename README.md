@@ -1,6 +1,6 @@
 # TO-DO-LIST - Proyecto Personal
 
-Este repositorio contiene una aplicación web simple para gestionar tareas pendientes (To-Do List), desarrollada como práctica de manipulación del DOM usando HTML, CSS y JavaScript. El objetivo es reforzar conocimientos de programación web y lógica.
+Este repositorio contiene una aplicación web simple para gestionar tareas pendientes (To-Do List), desarrollada como práctica de manipulación del DOM usando HTML, CSS y JavaScript. El objetivo es reforzar conocimientos de programación web y lógica. https://alejandro120204hs.github.io/TO-DO-LIST/
 
 #  Descripción del Proyecto
 
